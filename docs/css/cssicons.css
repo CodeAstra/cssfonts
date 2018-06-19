@@ -46,3 +46,19 @@
     left: 0.3em;
     top: 0.2em;
     transform: rotate(75deg); }
+
+.css-icon.css-icon-search::before {
+  width: 1em;
+  height: 1em;
+  border: solid 0.1em currentColor;
+  border-radius: 50%;
+  top: 0;
+  left: 0; }
+
+.css-icon.css-icon-search::after {
+  background-color: currentColor;
+  width: 0.1em;
+  height: 0.25em;
+  transform: rotate(-45deg);
+  right: 0;
+  bottom: 0; }

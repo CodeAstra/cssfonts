@@ -1,0 +1,19 @@
+.css-icon.css-icon-search {
+  &::before {
+    width: $solid-size;
+    height: $solid-size;
+    border: solid $stroke-size currentColor;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    background-color: currentColor;
+    width: $stroke-size;
+    height: $solid-size/4;
+    transform: rotate(-45deg);
+    right: 0;
+    bottom: 0;
+  }
+}
