@@ -1,0 +1,31 @@
+$heart-arc-size: 0.8em;
+$heart-line-size: 0.8em;
+
+.css-icon.css-icon-heart {
+  height: $heart-line-size;
+  width: $heart-line-size;
+  border-left: solid $stroke-size currentColor;
+  border-bottom: solid $stroke-size currentColor;
+  transform: rotate(-45deg);
+
+  &::before, &::after {
+    width: $heart-arc-size;
+    height: $heart-arc-size / 2;
+    border-radius: $heart-arc-size $heart-arc-size 0 0;
+    border-top: solid $stroke-size currentColor;
+    border-left: solid $stroke-size currentColor;
+    border-right: solid $stroke-size currentColor;
+  }
+
+  &::before {
+    left: -$heart-arc-size / 8;
+    top: -$heart-arc-size / 4;
+    transform: rotate(15deg);
+  }
+
+  &::after {
+    left: 3 * $heart-arc-size / 8;
+    top: $heart-arc-size / 4;
+    transform: rotate(75deg);
+  }
+}

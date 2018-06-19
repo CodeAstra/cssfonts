@@ -1,0 +1,45 @@
+.css-icon {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  height: 1em; }
+  .css-icon::before, .css-icon::after {
+    content: '';
+    position: absolute; }
+
+.css-icon.css-icon-add::before, .css-icon.css-icon-add::after {
+  background-color: currentColor; }
+
+.css-icon.css-icon-add::before {
+  width: 1em;
+  height: 0.1em;
+  top: 0.45em;
+  left: 0; }
+
+.css-icon.css-icon-add::after {
+  width: 0.1em;
+  height: 1em;
+  left: 0.45em;
+  top: 0; }
+
+.css-icon.css-icon-heart {
+  height: 0.8em;
+  width: 0.8em;
+  border-left: solid 0.1em currentColor;
+  border-bottom: solid 0.1em currentColor;
+  transform: rotate(-45deg); }
+  .css-icon.css-icon-heart::before, .css-icon.css-icon-heart::after {
+    width: 0.8em;
+    height: 0.4em;
+    border-radius: 0.8em 0.8em 0 0;
+    border-top: solid 0.1em currentColor;
+    border-left: solid 0.1em currentColor;
+    border-right: solid 0.1em currentColor; }
+  .css-icon.css-icon-heart::before {
+    left: -0.1em;
+    top: -0.2em;
+    transform: rotate(15deg); }
+  .css-icon.css-icon-heart::after {
+    left: 0.3em;
+    top: 0.2em;
+    transform: rotate(75deg); }

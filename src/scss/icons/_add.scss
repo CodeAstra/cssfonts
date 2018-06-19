@@ -1,0 +1,19 @@
+.css-icon.css-icon-add {
+  &::before, &::after {
+    background-color: currentColor;
+  }
+
+  &::before {
+    width: $solid-size;
+    height: $stroke-size;
+    top: ($solid-size - $stroke-size) / 2;
+    left: 0;
+  }
+
+  &::after {
+    width: $stroke-size;
+    height: $solid-size;
+    left: ($solid-size - $stroke-size) / 2;
+    top: 0;
+  }
+}

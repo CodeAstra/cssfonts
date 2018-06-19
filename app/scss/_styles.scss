@@ -1,0 +1,39 @@
+main {
+  color: $dark-color;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+section {
+  article {
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+    padding: 0.5rem;
+    display: inline-block;
+
+    .css-icon {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 2rem;
+      margin: 0;
+      font-style: italic;
+    }
+
+    &:hover {
+      background-color: lighten($dark-color, 60%);
+    }
+  }
+}
+
+footer {
+  margin: 2rem 0;
+  text-align: center;
+}

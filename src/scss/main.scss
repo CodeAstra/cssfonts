@@ -1,34 +1,4 @@
-$solid-size: 1em;
-$stroke-size: 0.1em;
-
-.css-icon {
-  display: inline-block;
-  position: relative;
-  width: $solid-size;
-  height: $solid-size;
-
-  &::before, &::after {
-    content: '';
-    position: absolute;
-  }
-
-  &.css-icon-add {
-    &::before, &::after {
-      background-color: currentColor;
-    }
-
-    &::before {
-      width: $solid-size;
-      height: $stroke-size;
-      top: ($solid-size - $stroke-size) / 2;
-      left: 0;
-    }
-
-    &::after {
-      width: $stroke-size;
-      height: $solid-size;
-      left: ($solid-size - $stroke-size) / 2;
-      top: 0;
-    }
-  }
-}
+@import 'variables',
+        'common',
+        'icons/add',
+        'icons/heart';

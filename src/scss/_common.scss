@@ -1,0 +1,11 @@
+.css-icon {
+  display: inline-block;
+  position: relative;
+  width: $solid-size;
+  height: $solid-size;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+  }
+}

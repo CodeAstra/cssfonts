@@ -4,9 +4,10 @@
   "description": "Icons using pure CSS",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass -w --include-path ./src/scss ./src/scss/main.scss ./public/css/cssicons.css",
+    "build:css": "node-sass -w --include-path ./src/scss --include-path ./src/scss/icons ./src/scss/main.scss ./docs/css/cssicons.css",
+    "build:app": "node-sass -w --include-path ./app/scss ./app/scss/app.scss ./docs/css/app.css",
     "serve": "lite-server ./public/",
-    "start": "concurrently --kill-others \"npm run build\" \"npm run serve\""
+    "start": "concurrently --kill-others \"npm run build:css\" \"npm run build:app\" \"npm run serve\""
   },
   "repository": "git+https://github.com/CodeAstra/cssfonts.git",
   "keywords": [
