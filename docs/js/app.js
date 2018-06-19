@@ -1,4 +1,4 @@
-var icons = ['add', 'close', 'heart', 'search'];
+var icons = ['add', 'close', 'heart', 'search', 'down'];
 
 var iconContainerTemplate = '<article>' +
   '<span class="css-icon css-icon-{iconName}"></span>' +

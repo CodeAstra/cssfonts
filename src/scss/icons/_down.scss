@@ -1,0 +1,27 @@
+$down_half_size: ( $solid-size - $stroke-size ) / 2;
+
+.css-icon.css-icon-down {
+  width: $stroke-size;
+  height: $solid-size * 0.8;
+  background-color: currentColor;
+
+  &::before, &::after {
+    height: $stroke-size;
+    width: $down_half_size;
+    background-color: currentColor;
+  }
+
+  &::before {
+    bottom: 0;
+    left: -$down_half_size;
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    left: $stroke-size;
+    bottom: 0;
+    transform-origin: bottom left;
+  }
+}

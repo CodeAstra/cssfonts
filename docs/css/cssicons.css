@@ -25,6 +25,25 @@
 .css-icon.css-icon-close {
   transform: rotate(45deg); }
 
+.css-icon.css-icon-down {
+  width: 0.1em;
+  height: 1em;
+  background-color: currentColor; }
+  .css-icon.css-icon-down::before, .css-icon.css-icon-down::after {
+    height: 0.1em;
+    width: 0.45em;
+    background-color: currentColor; }
+  .css-icon.css-icon-down::before {
+    bottom: 0;
+    left: -0.45em;
+    transform: rotate(45deg);
+    transform-origin: bottom right; }
+  .css-icon.css-icon-down::after {
+    transform: rotate(-45deg);
+    left: 0.1em;
+    bottom: 0;
+    transform-origin: bottom left; }
+
 .css-icon.css-icon-heart {
   height: 0.8em;
   width: 0.8em;
