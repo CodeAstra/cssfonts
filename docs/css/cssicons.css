@@ -7,20 +7,23 @@
     content: '';
     position: absolute; }
 
-.css-icon.css-icon-add::before, .css-icon.css-icon-add::after {
+.css-icon.css-icon-add::before, .css-icon.css-icon-close::before, .css-icon.css-icon-add::after, .css-icon.css-icon-close::after {
   background-color: currentColor; }
 
-.css-icon.css-icon-add::before {
+.css-icon.css-icon-add::before, .css-icon.css-icon-close::before {
   width: 1em;
   height: 0.1em;
   top: 0.45em;
   left: 0; }
 
-.css-icon.css-icon-add::after {
+.css-icon.css-icon-add::after, .css-icon.css-icon-close::after {
   width: 0.1em;
   height: 1em;
   left: 0.45em;
   top: 0; }
+
+.css-icon.css-icon-close {
+  transform: rotate(45deg); }
 
 .css-icon.css-icon-heart {
   height: 0.8em;
