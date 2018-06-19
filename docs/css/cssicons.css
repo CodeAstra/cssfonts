@@ -25,20 +25,20 @@
 .css-icon.css-icon-close {
   transform: rotate(45deg); }
 
-.css-icon.css-icon-down {
+.css-icon.css-icon-down, .css-icon.css-icon-left, .css-icon.css-icon-right, .css-icon.css-icon-up {
   width: 0.1em;
-  height: 1em;
+  height: 0.8em;
   background-color: currentColor; }
-  .css-icon.css-icon-down::before, .css-icon.css-icon-down::after {
+  .css-icon.css-icon-down::before, .css-icon.css-icon-left::before, .css-icon.css-icon-right::before, .css-icon.css-icon-up::before, .css-icon.css-icon-down::after, .css-icon.css-icon-left::after, .css-icon.css-icon-right::after, .css-icon.css-icon-up::after {
     height: 0.1em;
     width: 0.45em;
     background-color: currentColor; }
-  .css-icon.css-icon-down::before {
+  .css-icon.css-icon-down::before, .css-icon.css-icon-left::before, .css-icon.css-icon-right::before, .css-icon.css-icon-up::before {
     bottom: 0;
     left: -0.45em;
     transform: rotate(45deg);
     transform-origin: bottom right; }
-  .css-icon.css-icon-down::after {
+  .css-icon.css-icon-down::after, .css-icon.css-icon-left::after, .css-icon.css-icon-right::after, .css-icon.css-icon-up::after {
     transform: rotate(-45deg);
     left: 0.1em;
     bottom: 0;
@@ -66,6 +66,12 @@
     top: 0.2em;
     transform: rotate(75deg); }
 
+.css-icon.css-icon-left {
+  transform: rotate(90deg); }
+
+.css-icon.css-icon-right {
+  transform: rotate(-90deg); }
+
 .css-icon.css-icon-search::before {
   width: 1em;
   height: 1em;
@@ -81,3 +87,6 @@
   transform: rotate(-45deg);
   right: 0;
   bottom: 0; }
+
+.css-icon.css-icon-up {
+  transform: rotate(180deg); }

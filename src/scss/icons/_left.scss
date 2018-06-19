@@ -1,0 +1,5 @@
+.css-icon.css-icon-left {
+  @extend .css-icon.css-icon-down;
+
+  transform: rotate(90deg);
+}

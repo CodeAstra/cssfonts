@@ -1,0 +1,5 @@
+.css-icon.css-icon-up {
+  @extend .css-icon.css-icon-down;
+
+  transform: rotate(180deg);
+}
