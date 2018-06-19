@@ -4,12 +4,11 @@
   "description": "Icons using pure CSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node-sass -w --include-path ./src/scss ./src/scss/main.scss ./public/css/cssicons.css",
+    "serve": "lite-server ./public/",
+    "start": "concurrently --kill-others \"npm run build\" \"npm run serve\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CodeAstra/cssfonts.git"
-  },
+  "repository": "git+https://github.com/CodeAstra/cssfonts.git",
   "keywords": [
     "CSS",
     "Icons"
@@ -19,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/CodeAstra/cssfonts/issues"
   },
-  "homepage": "https://github.com/CodeAstra/cssfonts#readme"
+  "homepage": "https://github.com/CodeAstra/cssfonts#readme",
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5"
+  }
 }
